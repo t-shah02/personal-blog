@@ -1,5 +1,9 @@
 {
   "name": "personal-blog",
+  "author": {
+    "name": "Tanish Shah",
+    "email": "connecttanish@gmail.com"
+  },
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,10 +16,13 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
+    "@docusaurus/faster": "^3.7.0",
     "@docusaurus/preset-classic": "3.7.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
@@ -27,6 +34,10 @@
     "@docusaurus/module-type-aliases": "3.7.0",
     "@docusaurus/tsconfig": "3.7.0",
     "@docusaurus/types": "3.7.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.4.2",
     "typescript": "~5.6.2"
   },
   "browserslist": {
